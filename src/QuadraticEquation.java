@@ -14,10 +14,12 @@ public class QuadraticEquation {
         double delta = quadraticEquation.getDiscriminant();
         if(delta<0){
             System.out.println("The equation has no roots");
+            return;
         }
         if(delta==0){
             double x = quadraticEquation.getRoot1();
             System.out.println("The equation has one root: "+x);
+            return;
         }
         else {
             double x1 = quadraticEquation.getRoot1();
